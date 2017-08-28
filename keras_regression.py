@@ -1,7 +1,6 @@
 from __future__ import print_function
 import argparse
 import keras
-from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.optimizers import Adam
@@ -9,7 +8,6 @@ import keras.regularizers as regularizers
 from dataset import CsvDataset
 import numpy as np
 import matplotlib.pyplot as plt
-from keras import backend as K
 
 parser = argparse.ArgumentParser(description='Neural network regression sample')
 parser.add_argument('csv_file')
